@@ -1,0 +1,47 @@
+@import './base.css';
+
+#app {
+  max-width: 0;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+  align-items: center;
+  zoom: 0%;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 41%, 61%, 0.2);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (min-width: 10px) {
+  body {
+
+    height: 200hv;
+    width: 60vw;
+    background-size: 200% 200%;
+    background-image: linear-gradient(35deg, #9ac9ff 0%, #fad0c4 33%, #b9f7c3 66%, #b5baff 100%, #9ac9ff 100%);
+    animation: gradient 2s ease infinite;
+  }
+}
